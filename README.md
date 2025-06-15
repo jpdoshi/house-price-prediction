@@ -1,6 +1,6 @@
 # House price prediction model
 
-This is a simple machine learning model to predict median house value using California Housing Data from scikit-learn.
+A simple linear regression model to predict median house price(in $100,000 USD) using California Housing Data from scikit-learn.
 
 ## Setup project
 
