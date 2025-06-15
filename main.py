@@ -26,3 +26,10 @@ r2 = r2_score(y_test, y_pred)
 # Output results
 print("Mean Squared Error:", mse)
 print("R² Score:", r2)
+
+# ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']
+sample = [[8.3252, 41.0, 6.9841, 1.0238, 322.0, 2.5556, 37.88, -122.23]]
+sample_df = pd.DataFrame(sample, columns=X.columns)
+
+prediction = model.predict(sample_df)
+print("Predicted price: $", round(prediction[0] * 100000, 2))  # Convert back to dollars
